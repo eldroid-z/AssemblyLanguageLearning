@@ -5,7 +5,7 @@
 nasm -f elf64 -o output/HelloWorld.o FirstSteps/HelloWorld.asm
 ```
 
-2. Use linker to generating the binary file to execute
+2. Use `linker` to generating the binary file to execute
 ```
 ld -s -o targets/HelloWorld  output/HelloWorld.o
 ```
