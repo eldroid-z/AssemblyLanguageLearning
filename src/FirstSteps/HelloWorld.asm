@@ -1,12 +1,12 @@
+; section .bss    ; Unitialised data : variables ;  not required at the moment
+
 section .data   ; initialized data ; constants
 
     ; labels are memory locations
     ; msg -> is memory location
     ; db -> define byte
     msg: db "Hello World", 10, 0 ; this is our message; 10 -> ascii for newline; 0 -> null at end of message
-
-    msg_L : equ $-msg
-
+    msg_L : equ $-msg ; get the length of the string, $ denoted current address.
 
 ; print someting
 section .text   ; asm code
